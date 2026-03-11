@@ -1,0 +1,85 @@
+/* Bu dosya sitenin Harici (External) CSS dosyasıdır. */
+
+/* Siteye genel kurallar buradan verilir, o yüzden diğer sayfalara da bu dosyayı bağladığımızda hepsinin tasarımı aynı olur. */
+body {
+    /* İstersen bütün arka planı buradan değiştirebilirsin. Şimdilik sitemizin arka planı çok uçuk bir gri olacak. */
+    background-color: #fcfcfc; 
+}
+
+/* Bu sınıfa sahip kutuların etrafına boşluk (margin), iç boşluk (padding) ve kalınlık (bold) vs. ekledik */
+.css-kutu-ornek {
+    border: 2px solid DodgerBlue;  /* Kutuya 2 piksel kalınlığında düz ve mavi bir çerçeve çiztik */
+    padding: 30px;                 /* Çerçeve çizgisi ile içerideki yazı arasında 30 piksellik bir (İç Boşluk) yarattık */
+    margin: 50px;                  /* Kutumuzun dışındaki diğer elemanlardan (paragraflar veya duvarlardan) 50 piksel (Dış Boşluk) bıraktık */
+    background-color: AliceBlue;   /* Sadece bu kutucuğun arkaplan rengi çok açık bir mavi oldu */
+    font-family: Arial, Helvetica, sans-serif; /* Bu kutudaki yazı fontu Arial şekline dönüşsün */
+}
+
+/* Sitemizdeki özel bağlantı metinlerinin genel renklerini belirleyelim */
+.ozel-baglanti:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.ozel-baglanti:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.ozel-baglanti:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.ozel-baglanti:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* Sitemizde buton gibi görünen bir bağlantı tasarlayalım */
+.baglanti-butonu {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none; /* Alt çizgiyi kaldırdık */
+    display: inline-block;
+}
+
+.baglanti-butonu:hover, .baglanti-butonu:active {
+    background-color: red;
+}
+
+/* Modern Buton Tasarımları (RKS Kırmızısı) */
+.modern-btn {
+    background-color: #d32f2f;
+    color: white !important;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none !important;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.modern-btn:hover {
+    background-color: #b71c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+}
+
+.iletisim-btn {
+    background-color: #1976d2; /* Mavi Tonu */
+}
+
+.iletisim-btn:hover {
+    background-color: #1565c0;
+}
