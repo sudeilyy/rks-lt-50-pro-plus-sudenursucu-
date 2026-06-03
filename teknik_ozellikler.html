@@ -1,64 +1,106 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sude Nur Sucu - RKS Teknik Özellikleri</title>
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="styles.css?v=3">
 </head>
+
 <body>
 
     <!-- Üst Yönlendirmeler -->
-    <h2>Sude Nur Sucu'nun web sayfalarına hoş geldiniz...</h2>
+    <div class="header-welcome">Sude Nur Sucu'nun web sayfalarına hoş geldiniz...</div>
     <br>
-    
-    <a href="index.html" class="modern-btn">Ana Sayfaya Geri Dön</a>
-    &nbsp;&nbsp;&nbsp;
-    <a href="gorsel_inceleme.html" class="modern-btn">RKS LT 50 Görsel İnceleme ve Donanımlar</a>
-    <br><br><br>
-    <hr>
-    
-    <!-- Başlangıç -->
-    <h1 id="sayfa-basi" style="color:blue;">RKS LT 50 Pro Plus Teknik Özellikleri</h1>
-    <p style="color:red;" title="Mükemmel Şehir Motoru">Bu site Sude Nur Sucu tarafından hazırlanmış, RKS LT 50 Pro Plus tanıtım sayfasıdır.</p>
 
-    <!-- H Başlıkları (Motor Özellikleri Olarak Uyarlandı) -->
-    <h2 style="font-size:40px;">Şehrin Yeni Gözdesi (H2 Başlığı)</h2>
-    <h3>B Sınıfı Ehliyet Uyumlu (H3 Alt Başlığı)</h3>
-    <h4>Düşük Yakıt Tüketimi (H4 Başlığı)</h4>
-    <h5>Şık ve Sportif Tasarım (H5 Başlığı)</h5>
-    <h6>Kompakt Yapı (H6 Başlığı)</h6>
+    <div class="nav-container">
+        <a href="index.html" class="modern-btn">Ana Sayfaya Geri Dön</a>
+        <a href="gorsel_inceleme.html" class="modern-btn">RKS LT 50 Görsel İnceleme ve Donanımlar</a>
+    </div>
 
-    <hr>
-    
-    <!-- Pre etiketi kullanımı -->
-    <h2>Geniş ve Ferah Sele Alanı</h2>
-    <pre>
-    RKS LT50 Pro Plus
-        ile şehir içi yolculuklarda
-    rahatlığı           en üst düzeyde hissedeceksiniz.
-    </pre>
+    <!-- Başlangıç ve Başlık Hiyerarşisi Kartı -->
+    <div class="content-box">
+        <h1 id="sayfa-basi">RKS LT 50 Pro Plus Teknik Özellikleri</h1>
+        <p style="color: #f87171; font-weight: 500;" title="Mükemmel Şehir Motoru">Bu site Sude Nur Sucu tarafından hazırlanmış, RKS LT 50 Pro Plus tanıtım sayfasıdır.</p>
+        
+        <hr style="margin: 20px 0;">
 
-    <hr>
+        <!-- H Başlıkları (Motor Özellikleri Olarak Uyarlandı) -->
+        <h2 style="font-size: 2.2rem; margin-top: 20px;">Şehrin Yeni Gözdesi</h2>
+        <h3>B Sınıfı Ehliyet Uyumlu</h3>
+        <h4>Düşük Yakıt Tüketimi</h4>
+        <h5>Şık ve Sportif Tasarım</h5>
+        <h6 style="color: var(--text-secondary); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.1em;">Kompakt Yapı</h6>
+    </div>
 
-    <!-- HTML Formatlama Etiketleri (Motor Konseptiyle) -->
-    <div style="background-color: powderblue; text-align: center; padding: 15px;">
-        <h2 style="color: rgb(255, 149, 0);">Neden LT 50 Pro Plus?</h2>
+    <!-- Pre Etiketi Kartı -->
+    <div class="content-box">
+        <h2>Geniş ve Ferah Sele Alanı</h2>
+        <p>Biçimlendirilmiş metin yapısı (pre kullanımı):</p>
+        <pre>
+RKS LT50 Pro Plus
+    ile şehir içi yolculuklarda
+rahatlığı           en üst düzeyde hissedeceksiniz.
+        </pre>
+    </div>
 
-        <p style="font-family: courier; font-size: 120%;"><b>Güçlü Aydınlatma:</b> Gece gündüz yüksek görünürlük.</p>
+    <!-- HTML Formatlama Etiketleri Kartı -->
+    <div class="content-box" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.08) 0%, rgba(18, 20, 26, 0.75) 100%);">
+        <h2 style="color: var(--primary-color); margin-bottom: 25px;">Neden LT 50 Pro Plus?</h2>
+
+        <p style="font-family: monospace; font-size: 1.15rem; color: var(--text-primary);"><b>Güçlü Aydınlatma:</b> Gece gündüz yüksek görünürlük.</p>
         <p><i>Kıvrak:</i> Şehir trafiğinde aralardan kolayca geçer.</p>
         <p><mark>Ekonomik:</mark> B Sınıfı Ehliyet ile kullanılabilir, sigorta zorunluluğu yok!</p>
         <p><small>Vergiden Muaf:</small> Motorlu Taşıtlar Vergisinden (MTV) muaftır.</p>
-        <p>Motor fiyatı <del>çok pahalı</del> değil, sınıfına göre <ins>çok avantajlı</ins>.</p>
-        <p>Yakıtı suyu (H<sub>2</sub>O) değil, temiz saf benzindir!</p>
+        <p style="margin-top: 15px;">Motor fiyatı <del>çok pahalı</del> değil, sınıfına göre <ins>çok avantajlı</ins>.</p>
+        <p>Yakıtı su (H<sub>2</sub>O) değil, temiz saf benzindir!</p>
     </div>
 
-    <!-- Alıntılar -->
-    <h3>Kullanıcı Yorumları ve Alıntılar</h3>
-    <blockquote cite="http://www.rksmotor.com.tr">
-        RKS LT50 Pro Plus, 50cc sınıfında devrim yaratan, hafifliği ve çevikliği ile trafik derdine son veren bir scooter modelidir. Özel enjeksiyon sistemiyle her mevsim tek marşta çalışır.
-    </blockquote>
-    <p>Uzun yıllardır motor kullanan bir ustanın sözü: <q>Trafikte beklemek, kalitesi belli bir scooter varken sadece zaman kaybıdır.</q></p>
+    <!-- Alıntılar Kartı -->
+    <div class="content-box">
+        <h2>Kullanıcı Yorumları ve Alıntılar</h2>
+        <blockquote cite="http://www.rksmotor.com.tr">
+            RKS LT50 Pro Plus, 50cc sınıfında devrim yaratan, hafifliği ve çevikliği ile trafik derdine son veren bir scooter modelidir. Özel enjeksiyon sistemiyle her mevsim tek marşta çalışır.
+            <cite>- RKS Motor</cite>
+        </blockquote>
+        <p style="margin-top: 15px;">Uzun yıllardır motor kullanan bir ustanın sözü: <q>Trafikte beklemek, kalitesi belli bir scooter varken sadece zaman kaybıdır.</q></p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Sude Nur Sucu'nun Ödevi</h4>
+                <p>Bu web sitesi, Sude Nur Sucu tarafından Web Tasarımı ve Programlama dersi ödevi olarak hazırlanmıştır. RKS LT 50 Pro Plus scooter modelini tanıtmayı amaçlar.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Hızlı Menü</h4>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="teknik_ozellikler.html">Teknik Özellikler</a></li>
+                    <li><a href="gorsel_inceleme.html">Görsel İnceleme</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>İletişim</h4>
+                <ul>
+                    <li><a href="mailto:sudenursucu@ornek.com">E-posta Gönder</a></li>
+                    <li><a href="tel:+905555555555">Bizi Arayın</a></li>
+                    <li><span style="color: var(--text-secondary); font-size: 0.95rem;">İstanbul, Türkiye</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sude Nur Sucu. Tüm Hakları Saklıdır.</p>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
+
 </html>

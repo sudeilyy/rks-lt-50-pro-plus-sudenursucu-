@@ -1,85 +1,447 @@
-/* Bu dosya sitenin Harici (External) CSS dosyasıdır. */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
-/* Siteye genel kurallar buradan verilir, o yüzden diğer sayfalara da bu dosyayı bağladığımızda hepsinin tasarımı aynı olur. */
+:root {
+    --bg-color: #06070a;
+    --card-bg: rgba(18, 20, 26, 0.75);
+    --border-color: rgba(255, 255, 255, 0.08);
+    --text-primary: #f3f4f6;
+    --text-secondary: #9ca3af;
+    --primary-color: #ef4444; /* RKS Kırmızısı */
+    --primary-hover: #dc2626;
+    --secondary-color: #2563eb; /* Mavi */
+    --secondary-hover: #1d4ed8;
+    --accent-glow: rgba(239, 68, 68, 0.15);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    /* İstersen bütün arka planı buradan değiştirebilirsin. Şimdilik sitemizin arka planı çok uçuk bir gri olacak. */
-    background-color: #fcfcfc; 
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: radial-gradient(circle at 50% 0%, #1f0f15 0%, #06070a 100%);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
-/* Bu sınıfa sahip kutuların etrafına boşluk (margin), iç boşluk (padding) ve kalınlık (bold) vs. ekledik */
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #06070a;
+}
+::-webkit-scrollbar-thumb {
+    background: #1f2937;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 15px;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: 2.8rem;
+    background: linear-gradient(135deg, #ffffff 0%, #fee2e2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: var(--text-primary);
+    margin-top: 15px;
+}
+
+p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+/* Navigation / Header Area */
+.header-welcome {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Buttons */
+.modern-btn {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #b91c1c 100%);
+    color: #ffffff !important;
+    padding: 14px 28px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none !important;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.25);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 5px;
+}
+
+.modern-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(239, 68, 68, 0.45), 0 0 15px var(--accent-glow);
+    background: linear-gradient(135deg, #ff6b6b 0%, #dc2626 100%);
+}
+
+.modern-btn:active {
+    transform: translateY(-1px);
+}
+
+.iletisim-btn {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #1d4ed8 100%);
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+}
+
+.iletisim-btn:hover {
+    background: linear-gradient(135deg, #60a5fa 0%, #1e40af 100%);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.45);
+}
+
+/* Eski Buton ve Örnek Kutu Stillerinin Korunarak Modernleştirilmesi */
+.baglanti-butonu {
+    background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%);
+    color: white !important;
+    padding: 14px 28px;
+    text-align: center;
+    text-decoration: none !important;
+    display: inline-block;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(244, 67, 54, 0.2);
+}
+
+.baglanti-butonu:hover, .baglanti-butonu:active {
+    background: linear-gradient(135deg, #ff5252 0%, #b71c1c 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(244, 67, 54, 0.4);
+}
+
 .css-kutu-ornek {
-    border: 2px solid DodgerBlue;  /* Kutuya 2 piksel kalınlığında düz ve mavi bir çerçeve çiztik */
-    padding: 30px;                 /* Çerçeve çizgisi ile içerideki yazı arasında 30 piksellik bir (İç Boşluk) yarattık */
-    margin: 50px;                  /* Kutumuzun dışındaki diğer elemanlardan (paragraflar veya duvarlardan) 50 piksel (Dış Boşluk) bıraktık */
-    background-color: AliceBlue;   /* Sadece bu kutucuğun arkaplan rengi çok açık bir mavi oldu */
-    font-family: Arial, Helvetica, sans-serif; /* Bu kutudaki yazı fontu Arial şekline dönüşsün */
+    border: 2px solid #ef4444;
+    padding: 30px;
+    margin: 25px auto;
+    width: 100%;
+    max-width: 900px;
+    background: rgba(239, 68, 68, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    font-family: inherit;
 }
 
-/* Sitemizdeki özel bağlantı metinlerinin genel renklerini belirleyelim */
+/* Özel Bağlantı Stilleri (Hocanın İstediği Özelliklerin Korunması) */
 .ozel-baglanti:link {
-    color: green;
+    color: #34d399; /* Yeşil ton */
     background-color: transparent;
     text-decoration: none;
 }
 
 .ozel-baglanti:visited {
-    color: pink;
+    color: #f472b6; /* Pembe ton */
     background-color: transparent;
     text-decoration: none;
 }
 
 .ozel-baglanti:hover {
-    color: red;
+    color: #ef4444; /* Kırmızı ton */
     background-color: transparent;
     text-decoration: underline;
 }
 
 .ozel-baglanti:active {
-    color: yellow;
+    color: #fbbf24; /* Sarı ton */
     background-color: transparent;
     text-decoration: underline;
 }
 
-/* Sitemizde buton gibi görünen bir bağlantı tasarlayalım */
-.baglanti-butonu {
-    background-color: #f44336;
-    color: white;
-    padding: 15px 25px;
-    text-align: center;
-    text-decoration: none; /* Alt çizgiyi kaldırdık */
-    display: inline-block;
+/* Modern Card Layouts (Box'lar) */
+.content-box, .modern-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 25px auto;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    transition: all 0.3s ease;
 }
 
-.baglanti-butonu:hover, .baglanti-butonu:active {
-    background-color: red;
-}
-
-/* Modern Buton Tasarımları (RKS Kırmızısı) */
-.modern-btn {
-    background-color: #d32f2f;
-    color: white !important;
-    padding: 12px 24px;
-    text-align: center;
-    text-decoration: none !important;
-    display: inline-block;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: 0.3s;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.modern-btn:hover {
-    background-color: #b71c1c;
+.content-box:hover, .modern-card:hover {
+    border-color: rgba(239, 68, 68, 0.3);
+    box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.6), 0 0 15px rgba(239, 68, 68, 0.05);
     transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0,0,0,0.2);
 }
 
-.iletisim-btn {
-    background-color: #1976d2; /* Mavi Tonu */
+.center-card {
+    text-align: center;
 }
 
-.iletisim-btn:hover {
-    background-color: #1565c0;
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.01);
+}
+
+/* Code block & Pre */
+pre {
+    background: #030712;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    font-family: 'Fira Code', monospace, Courier;
+    color: #fca5a5;
+    overflow-x: auto;
+    margin: 20px 0;
+    font-size: 0.95rem;
+}
+
+/* Blockquote */
+blockquote {
+    border-left: 4px solid var(--primary-color);
+    background: rgba(239, 68, 68, 0.05);
+    padding: 20px;
+    border-radius: 0 12px 12px 0;
+    margin: 20px 0;
+    font-style: italic;
+    color: var(--text-primary);
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-style: normal;
+}
+
+q {
+    color: var(--primary-color);
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Text formatting tags */
+mark {
+    background-color: rgba(239, 68, 68, 0.25);
+    color: #f87171;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+del {
+    color: #ef4444;
+    text-decoration: line-through;
+}
+
+ins {
+    color: #10b981;
+    text-decoration: none;
+    border-bottom: 1px dashed #10b981;
+}
+
+small {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* Float styling box */
+.float-box {
+    overflow: auto;
+    min-height: 120px;
+}
+
+.float-box img {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: 2px solid var(--primary-color);
+}
+
+/* Divider */
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border-color), transparent);
+    margin: 40px 0;
+}
+
+/* Footer Section */
+footer {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 60px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 30px;
+    text-align: center;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.footer-col h4 {
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 0.95rem;
+}
+
+.footer-col ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-col p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 20px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-bottom p {
+    margin-bottom: 0;
+}
+
+.social-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 1.1rem;
+    transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive elements */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 15px;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .modern-btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    .content-box, .modern-card {
+        padding: 20px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-col h4 {
+        margin-top: 15px;
+        text-align: center;
+    }
+    
+    .footer-col ul {
+        text-align: center;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
 }

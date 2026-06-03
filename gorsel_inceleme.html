@@ -1,95 +1,160 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sude Nur Sucu - RKS Görsel Detaylar</title>
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="styles.css?v=3">
 </head>
+
 <body>
 
     <!-- Üst Yönlendirmeler -->
-    <h2>Sude Nur Sucu'nun web sayfalarına hoş geldiniz...</h2>
+    <div class="header-welcome">Sude Nur Sucu'nun web sayfalarına hoş geldiniz...</div>
     <br>
-    
-    <a href="index.html" class="modern-btn">Ana Sayfaya Geri Dön</a>
-    &nbsp;&nbsp;&nbsp;
-    <a href="teknik_ozellikler.html" class="modern-btn">RKS LT 50 Pro Plus Teknik Özellikleri</a>
-    <br><br><br>
-    <hr>
 
-    <!-- GÖRSELLER REHBERİ (Motor Temalı) -->
-    <h2>Motorun Görsel Detayları (Resim Özellikleri)</h2>
-    
-    <h3>1. Gösterge Paneli (Boyutlandırılmış Görsel)</h3>
-    <p>Motorun dijital ve analog karışımı, tüm bilgileri net gösteren şık bir gösterge paneli bulunuyor.</p>
-    <!-- Stil kodu ile resim boyutlandırma örneği -->
-    <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Motor Gösterge Paneli" style="width:300px; height:180px; border-radius: 10px;">
-
-    <h3>2. Kask Satın Al (Sayfa Yönlendiren Resim Buton)</h3>
-    <p>Motorunuzu kullanırken kasksız yola çıkmayın. Satın almak için alt resme tıklayınız.</p>
-    <a href="https://www.google.com/search?q=yar%C4%B1m+motosiklet+kask%C4%B1" target="_blank" title="Kask satın almak için tıklayın">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Motorcycle_helmet_Black.jpg/320px-Motorcycle_helmet_Black.jpg" alt="Motosiklet Yarım Kask" style="width:120px; height:120px; border: 3px solid orange; object-fit: cover; border-radius: 10px; background-color: white;">
-    </a>
-
-    <h3>3. Yolda RKS Hissi (Animasyonlu GIF)</h3>
-    <p>Şehir içinde işte bu kadar hızlı ve güvenle manevra yapabilirsiniz.</p>
-    <!-- Harici bir kaynaktan (Giphy vs.) Motor GIF i ekleme örneği -->
-    <img src="https://media.giphy.com/media/l1Aswx03WbLDf9kYw/giphy.gif" alt="Hareketli Motor" style="width:200px;">
-
-    <h3>4. Özel Kaydırmaz Lastikler (Sağa Yaslama - Float)</h3>
-    <p style="border: 1px dashed gray; padding: 15px; overflow: auto; min-height: 120px;">
-        <!-- Resmi sağa float komutu ile yaslama örneği -->
-        <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&w=150&q=80" alt="Motor Tekerleği" style="float:right; width:150px; margin-left:15px; border-radius: 50%;">
-        RKS LT 50 Pro Plus'ın yere sağlam basan, kaymayı engelleyici özel desenli derin kanallı lastikleri vardır. Görmüş olduğunuz gibi metnimiz, <b>float: right</b> ile sağa yasladığımız tekerlek resminin solundan dolanarak aşağıya inmeye devam ediyor. Yol tutuşunu artıran bu harika alaşım jantlar ve lastikler sayesinde ister ıslak ister kuru zeminde güvenliğinizi maksimuma çıkarır.
-    </p>
-
-    <hr>
-
-    <h3>5. RKS LT 50 Pro Plus İnteraktif Haritası (Image Map)</h3>
-    <p>Motor resminin üzerindeki belli başlı donanımlara (Tekerlek, Far, Sele) tıklayarak Javascript mesajını görebilirsiniz.</p>
-    
-    <!-- Resim Haritası Kullanımı -->
-    <img src="rkslt50proplus.jpg.webp" alt="RKS LT50 Pro Plus" usemap="#motorharitasi" style="width:500px; height:auto; margin-bottom: 20px;">
-    
-    <map name="motorharitasi">
-        <!-- Motorun ön teker tahmini bölgesine tıklama alanı (Daire) -->
-        <area shape="circle" coords="120,380,50" alt="Ön Teker" href="javascript:void(0);" onclick="alert('Güçlü disk frenlere ve yol tutuşuna sahip alaşım jantlı ön teker!');" title="Ön Tekeri İncele">
-        <!-- Motorun Far tahmini bölgesine tıklama alanı (Dikdörtgen)-->
-        <area shape="rect" coords="150,50,250,150" alt="Ön Far" href="javascript:void(0);" onclick="alert('Geceyi gündüze çeviren düşük tüketimli LED Ön Far takımı!');" title="LED Far">
-        <!-- Sele/Koltuk tahmini bölgesine tıklama (Dikdörtgen) -->
-        <area shape="rect" coords="250,180,450,250" alt="Sele" href="javascript:void(0);" onclick="alert('İsteğe bağlı portbagaj takılabilen ekstra konforlu geniş sele!');" title="Sele Konforu">
-    </map>
-
-    <br>
-    
-    <hr>
-    
-    <h3>6. Motorsiklet Tutkusu (Arka Plan Resmi)</h3>
-    <p>Aşağıdaki metinlerin arka planına sayfa kodlarımızın içinden CSS özelliğiyle muazzam bir motor gezi fotoğrafı yerleştirdik.</p>
-    <!-- Background Image Kullanım Örneği -->
-    <div style="background-image: url('https://images.unsplash.com/photo-1558980394-0a06c4631733?auto=format&fit=crop&w=800&q=80'); background-repeat: no-repeat; background-size: cover; color: white; padding: 50px; text-align: center; border: 2px solid crimson;">
-        <h2 style="text-shadow: 2px 2px 4px #000000;">Yollar Sizi Bekliyor!</h2>
-        <p style="text-shadow: 1px 1px 2px #000000; font-size: 110%;">Motor sürmek bir tutkudur. RKS LT50 Pro Plus ile şehrin her sokağı artık sizin.</p>
+    <div class="nav-container">
+        <a href="index.html" class="modern-btn">Ana Sayfaya Geri Dön</a>
+        <a href="teknik_ozellikler.html" class="modern-btn">RKS LT 50 Pro Plus Teknik Özellikleri</a>
     </div>
 
-    <hr>
-    
-    <h3>7. Görsel Optimizasyon (HTML Picture Etiketi)</h3>
-    <p>İnternet kotanızı korumak adına tarayıcınızın pencere genişliğine (Telefon veya Bilgisayar oluşuna) göre alttaki motor resmi değişmektedir.</p>
-    <div style="border: 2px dashed skyblue; padding: 20px;">
-        <p><b>Test Edin:</b> Web tarayıcınızın penceresini sağdan sola daraltıp genişleterek; resmin ekran boyutuna göre otomatik nasıl değiştiğini görün.</p>
-        <picture>
-            <!-- Ekran büyükse (Masaüstü): Manzara içinde Motor -->
-            <source media="(min-width: 650px)" srcset="https://images.unsplash.com/photo-1558980394-0a06c4631733?auto=format&fit=crop&w=600&q=80">
-            <!-- Ekran orta boydaysa (Tablet): Yakın çekim kasklı motorcu -->
-            <source media="(min-width: 465px)" srcset="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=400&q=80">
-            <!-- Çok dar ekran (Telefonsa): Motor Göstergesi resmi çıkar -->
-            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=250&q=80" alt="Motosiklet detayları" style="width:auto; max-width:100%;">
-        </picture>
+    <h1 style="text-align: center;">RKS LT 50 Görsel Detaylar</h1>
+
+    <!-- 1. Gösterge Paneli -->
+    <div class="content-box">
+        <h2>1. Gösterge Paneli</h2>
+        <p>Motorun dijital ve analog karışımı, tüm bilgileri net gösteren şık bir gösterge paneli bulunuyor.</p>
+        <div style="text-align: center; margin-top: 15px;">
+            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+                alt="Motor Gösterge Paneli" style="width: 100%; max-width: 400px; height: auto; border-radius: 12px;">
+        </div>
     </div>
 
-    <br><br>
+    <!-- 2. Kask Satın Al -->
+    <div class="content-box">
+        <h2>2. Kask Satın Al</h2>
+        <p>Motorunuzu kullanırken kasksız yola çıkmayın. Satın almak için alt resme tıklayınız.</p>
+        <div style="text-align: center; margin-top: 15px;">
+            <a href="https://www.google.com/search?q=yar%C4%B1m+motosiklet+kask%C4%B1" target="_blank"
+                title="Kask satın almak için tıklayın">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Motorcycle_helmet_Black.jpg/320px-Motorcycle_helmet_Black.jpg"
+                    alt="Motosiklet Yarım Kask"
+                    style="width: 120px; height: 120px; border: 3px solid var(--primary-color); object-fit: cover; border-radius: 16px; background-color: white;">
+            </a>
+        </div>
+    </div>
+
+    <!-- 3. Yolda RKS Hissi -->
+    <div class="content-box">
+        <h2>3. Yolda RKS Hissi</h2>
+        <p>Şehir içinde işte bu kadar hızlı ve güvenle manevra yapabilirsiniz.</p>
+        <div style="text-align: center; margin-top: 15px;">
+            <img src="https://media.giphy.com/media/l1Aswx03WbLDf9kYw/giphy.gif" alt="Hareketli Motor" 
+                 style="width: 100%; max-width: 300px; border-radius: 12px;">
+        </div>
+    </div>
+
+    <!-- 4. Özel Kaydırmaz Lastikler -->
+    <div class="content-box">
+        <h2>4. Özel Kaydırmaz Lastikler</h2>
+        <div class="float-box" style="border: 1px dashed rgba(255,255,255,0.2); padding: 20px; border-radius: 12px; background: rgba(0,0,0,0.2);">
+            <!-- Resmi sağa float komutu ile yaslama örneği -->
+            <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&w=150&q=80"
+                alt="Motor Tekerleği" style="width: 150px; border-radius: 50%;">
+            RKS LT 50 Pro Plus'ın yere sağlam basan, kaymayı engelleyici özel desenli derin kanallı lastikleri vardır.
+            Görmüş olduğunuz gibi metnimiz, <b>float: right</b> ile sağa yasladığımız tekerlek resminin solundan dolanarak
+            aşağıya inmeye devam ediyor. Yol tutuşunu artıran bu harika alaşım jantlar ve lastikler sayesinde ister ıslak
+            ister kuru zeminde güvenliğinizi maksimuma çıkarır.
+        </div>
+    </div>
+
+    <!-- 5. RKS LT 50 Pro Plus İnteraktif Haritası -->
+    <div class="content-box center-card">
+        <h2>5. RKS LT 50 Pro Plus İnteraktif Haritası</h2>
+        <p>Motor resminin üzerindeki belli başlı donanımlara (Tekerlek, Far, Sele) tıklayarak etkileşimli bilgileri görebilirsiniz.</p>
+
+        <!-- Resim Haritası Kullanımı -->
+        <div style="display: inline-block; position: relative;">
+            <img src="rkslt50proplus.jpg.webp" alt="RKS LT50 Pro Plus" usemap="#motorharitasi"
+                style="width: 100%; max-width: 500px; height: auto; border-radius: 12px;">
+        </div>
+
+        <map name="motorharitasi">
+            <!-- Motorun ön teker tahmini bölgesine tıklama alanı (Daire) -->
+            <area shape="circle" coords="120,380,50" alt="Ön Teker" href="javascript:void(0);"
+                onclick="alert('Güçlü disk frenlere ve yol tutuşuna sahip alaşım jantlı ön teker!');"
+                title="Ön Tekeri İncele">
+            <!-- Motorun Far tahmini bölgesine tıklama alanı (Dikdörtgen)-->
+            <area shape="rect" coords="150,50,250,150" alt="Ön Far" href="javascript:void(0);"
+                onclick="alert('Geceyi gündüze çeviren düşük tüketimli LED Ön Far takımı!');" title="LED Far">
+            <!-- Sele/Koltuk tahmini bölgesine tıklama (Dikdörtgen) -->
+            <area shape="rect" coords="250,180,450,250" alt="Sele" href="javascript:void(0);"
+                onclick="alert('İsteğe bağlı portbagaj takılabilen ekstra konforlu geniş sele!');" title="Sele Konforu">
+        </map>
+    </div>
+
+    <!-- 6. Motorsiklet Tutkusu (Arka Plan Resmi) -->
+    <div class="content-box center-card" 
+         style="background-image: linear-gradient(rgba(6,7,10,0.65), rgba(6,7,10,0.85)), url('https://images.unsplash.com/photo-1558980394-0a06c4631733?auto=format&fit=crop&w=800&q=80'); background-repeat: no-repeat; background-position: center; background-size: cover; border: 1px solid var(--primary-color);">
+        <h2 style="text-shadow: 2px 2px 8px #000000; color: #ffffff;">Yollar Sizi Bekliyor!</h2>
+        <p style="text-shadow: 1px 1px 4px #000000; font-size: 1.15rem; color: #f3f4f6; margin-bottom: 0;">Motor sürmek bir tutkudur. RKS LT50 Pro Plus ile şehrin her sokağı artık sizin.</p>
+    </div>
+
+    <!-- 7. Görsel Optimizasyon -->
+    <div class="content-box">
+        <h2>7. Görsel Optimizasyon</h2>
+        <p>İnternet kotanızı korumak adına tarayıcınızın pencere genişliğine (Telefon veya Bilgisayar oluşuna) göre alttaki motor resmi değişmektedir.</p>
+        <div style="border: 1px dashed var(--primary-color); padding: 20px; border-radius: 12px; background: rgba(0,0,0,0.2); text-align: center;">
+            <p style="font-size: 0.95rem; margin-bottom: 15px;"><b>Test Edin:</b> Web tarayıcınızın penceresini sağdan sola daraltıp genişleterek resmin ekran boyutuna göre nasıl değiştiğini görün.</p>
+            <picture>
+                <!-- Ekran büyükse (Masaüstü): Manzara içinde Motor -->
+                <source media="(min-width: 650px)"
+                    srcset="https://images.unsplash.com/photo-1558980394-0a06c4631733?auto=format&fit=crop&w=600&q=80">
+                <!-- Ekran orta boydaysa (Tablet): Yakın çekim kasklı motorcu -->
+                <source media="(min-width: 465px)"
+                    srcset="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=400&q=80">
+                <!-- Çok dar ekran (Telefonsa): Motor Göstergesi resmi çıkar -->
+                <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=250&q=80"
+                    alt="Motosiklet detayları" style="width: auto; max-width: 100%; border-radius: 8px;">
+            </picture>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Sude Nur Sucu'nun Ödevi</h4>
+                <p>Bu web sitesi, Sude Nur Sucu tarafından Web Tasarımı ve Programlama dersi ödevi olarak hazırlanmıştır. RKS LT 50 Pro Plus scooter modelini tanıtmayı amaçlar.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Hızlı Menü</h4>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="teknik_ozellikler.html">Teknik Özellikler</a></li>
+                    <li><a href="gorsel_inceleme.html">Görsel İnceleme</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>İletişim</h4>
+                <ul>
+                    <li><a href="mailto:sudenursucu@ornek.com">E-posta Gönder</a></li>
+                    <li><a href="tel:+905555555555">Bizi Arayın</a></li>
+                    <li><span style="color: var(--text-secondary); font-size: 0.95rem;">İstanbul, Türkiye</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sude Nur Sucu. Tüm Hakları Saklıdır.</p>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
+
 </html>

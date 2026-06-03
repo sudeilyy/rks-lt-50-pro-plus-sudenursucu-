@@ -5,69 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sude Nur Sucu - RKS LT 50 Pro Plus</title>
-
-    <style>
-        #ana-baslik {
-            color: darkred;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-
-        /* Modern Buton Tasarımları */
-        .modern-btn {
-            background-color: #d32f2f; /* RKS Kırmızısı */
-            color: white !important;
-            padding: 12px 24px;
-            text-align: center;
-            text-decoration: none !important;
-            display: inline-block;
-            font-size: 16px;
-            font-family: Arial, sans-serif;
-            font-weight: bold;
-            border-radius: 8px; /* Yuvarlak Köşe */
-            transition: 0.3s; /* Animasyon geçişi */
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .modern-btn:hover {
-            background-color: #b71c1c; /* Koyu kırmızı hover */
-            transform: translateY(-2px); /* Tıklanma hissi */
-            box-shadow: 0 6px 8px rgba(0,0,0,0.2);
-        }
-
-        .iletisim-btn {
-            background-color: #1976d2; /* Mavi Tonu */
-        }
-
-        .iletisim-btn:hover {
-            background-color: #1565c0;
-        }
-    </style>
-
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="styles.css?v=3">
 </head>
 
 <body>
 
-    <!-- Üst Yönlendirmeler (Hocanın İstediği Format) -->
-    <h2>Sude Nur Sucu'nun web sayfalarına hoş geldiniz...</h2>
-    <br>
+    <!-- Üst Yönlendirmeler -->
+    <div class="header-welcome">Sude Nur Sucu'nun web sayfalarına hoş geldiniz...</div>
+    <h1 id="ana-baslik">RKS LT 50 Pro Plus</h1>
     
-    <!-- Linkler içeriğe uygun şekilde adlandırıldı -->
-    <a href="teknik_ozellikler.html" class="modern-btn">RKS LT 50 Pro Plus Teknik Özellikleri</a>
-    &nbsp;&nbsp;&nbsp; <!-- Yan yana durmaları için boşluk bırakıldı -->
-    <a href="gorsel_inceleme.html" class="modern-btn">RKS LT 50 Görsel İnceleme ve Donanımlar</a>
-    <br><br><br>
+    <!-- Linkler / Navigasyon Menüsü -->
+    <div class="nav-container">
+        <a href="teknik_ozellikler.html" class="modern-btn">RKS LT 50 Pro Plus Teknik Özellikleri</a>
+        <a href="gorsel_inceleme.html" class="modern-btn">RKS LT 50 Görsel İnceleme ve Donanımlar</a>
+    </div>
 
-    <!-- Ana Manzara Resmi Yerine Motor Resmi Eklendi -->
-    <img src="rkslt50proplus.jpg.webp" alt="RKS LT 50 Pro Plus Ana Görsel" width="500" style="border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
-    <br><br>
-    
-    <!-- İletişim Bağlantıları -->
-    <a href="mailto:sudenursucu@ornek.com" class="modern-btn iletisim-btn">Sude Nur Sucu'ya eposta gönder</a>
-    &nbsp;&nbsp;&nbsp;
-    <a href="tel:+905555555555" class="modern-btn iletisim-btn">Bizi arayın</a>
-    <br><br>
+    <!-- Ana İçerik Kartı -->
+    <div class="content-box center-card">
+        <h2 style="margin-bottom: 20px;">Şehir İçi Yolculuğun En Keyifli Hali</h2>
+        <p>RKS LT 50 Pro Plus, şık ve sportif tasarımı, düşük yakıt tüketimi ve B sınıfı ehliyet ile sürülebilme avantajıyla şehir hayatının karmaşasında en büyük yardımcınızdır. Trafikte vakit kaybetmek istemeyenlerin yeni tercihi.</p>
+        
+        <!-- Ana Manzara Resmi Yerine Motor Resmi -->
+        <div style="margin: 25px 0;">
+            <img src="rkslt50proplus.jpg.webp" 
+                 alt="RKS LT 50 Pro Plus Ana Görsel" 
+                 style="border-radius: 16px; width: 100%; max-width: 600px; border: 1px solid var(--border-color);">
+        </div>
+        
+        <!-- İletişim Bağlantıları -->
+        <div style="margin-top: 25px;">
+            <a href="mailto:sudenursucu@ornek.com" class="modern-btn iletisim-btn">Sude Nur Sucu'ya eposta gönder</a>
+            <a href="tel:+905555555555" class="modern-btn iletisim-btn">Bizi arayın</a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Sude Nur Sucu'nun Ödevi</h4>
+                <p>Bu web sitesi, Sude Nur Sucu tarafından Web Tasarımı ve Programlama dersi ödevi olarak hazırlanmıştır. RKS LT 50 Pro Plus scooter modelini tanıtmayı amaçlar.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Hızlı Menü</h4>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="teknik_ozellikler.html">Teknik Özellikler</a></li>
+                    <li><a href="gorsel_inceleme.html">Görsel İnceleme</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>İletişim</h4>
+                <ul>
+                    <li><a href="mailto:sudenursucu@ornek.com">E-posta Gönder</a></li>
+                    <li><a href="tel:+905555555555">Bizi Arayın</a></li>
+                    <li><span style="color: var(--text-secondary); font-size: 0.95rem;">İstanbul, Türkiye</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sude Nur Sucu. Tüm Hakları Saklıdır.</p>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
